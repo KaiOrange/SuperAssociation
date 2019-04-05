@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#828482" >
+
+        <TextView
+            android:id="@+id/shetuan_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/view"
+            android:text="社团简介"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="10dp"
+            android:textColor="#ffffff"
+            android:textSize="22sp" />
+        <ImageView
+            android:id="@+id/exit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:onClick="exit"
+            android:src="@drawable/sign_out_arrow" />
+
+        <View
+            android:id="@+id/view"
+            android:layout_width="2dp"
+            android:layout_height="20dp"
+            android:layout_toRightOf="@+id/exit"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="2dp"
+            android:layout_marginBottom="2dp"
+            android:background="#33ffffff" />
+
+    </RelativeLayout>
+	<View  
+	    android:layout_width="match_parent"
+    	android:layout_height="13dp"/>
+
+	<ScrollView
+	    android:id="@+id/scrollView1"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content" >
+
+	    <LinearLayout
+	        android:layout_width="match_parent"
+	        android:layout_height="match_parent"
+	        android:orientation="vertical" >
+
+	        <LinearLayout
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content"
+	            android:padding="10dp"
+	             >
+
+	            <TextView
+	                android:id="@+id/textView1"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:text="社  团  号：" 
+	                android:layout_marginRight="8dp"
+	                />
+	            <TextView
+	                android:id="@+id/shetuan_stid"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:text="" />
+	        </LinearLayout>
+	        <LinearLayout
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content"
+	            android:padding="10dp"
+	             >
+
+	            <TextView
+	                android:id="@+id/textView1"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:text="社  团  名：" 
+	                android:layout_marginRight="8dp"
+	                />
+	            <TextView
+	                android:id="@+id/shetuan_sname"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:text="" />
+	        </LinearLayout>
+	        
+	        
+	        <LinearLayout
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content"
+	            android:padding="10dp"
+	             >
+
+	            <TextView
+	                android:id="@+id/textView1"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:text="创建日期：" 
+	                android:layout_marginRight="8dp"
+	                />
+	            <TextView
+	                android:id="@+id/shetuan_cjdate"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:text="" />
+	        </LinearLayout>
+	        <LinearLayout
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content"
+	            android:padding="10dp"
+	             >
+
+	            <TextView
+	                android:id="@+id/textView1"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:text="描        述：" 
+	                android:layout_marginRight="8dp"
+	                />
+	            <TextView
+	                android:id="@+id/shetuan_sdescribe"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:text="" />
+	        </LinearLayout>
+	        <LinearLayout
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content"
+	            android:padding="10dp"
+	             >
+
+	            <TextView
+	                android:id="@+id/textView1"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:text="创  史  人：" 
+	                android:layout_marginRight="8dp"
+	                />
+	            <TextView
+	                android:id="@+id/shetuan_username"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:text="" />
+	        </LinearLayout>
+
+	    </LinearLayout>
+	</ScrollView>
+
+	<RelativeLayout
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_marginTop="10dp"
+	     >
+
+		<Button
+		    android:id="@+id/join_button"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_alignParentTop="true"
+		    android:layout_centerHorizontal="true"
+		    android:onClick="joinSheTuan"
+		    android:text="申请加入" />
+
+	</RelativeLayout>
+	
+</LinearLayout>

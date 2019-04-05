@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+      <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#828482" >
+
+        <TextView
+            android:id="@+id/friend_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/view"
+            android:text="转让与解散社团"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="10dp"
+            android:textColor="#ffffff"
+            android:textSize="22sp" />
+        <ImageView
+            android:id="@+id/userMain_exit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:onClick="tuichu"
+            android:src="@drawable/sign_out_arrow" />
+
+        <View
+            android:id="@+id/view"
+            android:layout_width="2dp"
+            android:layout_height="20dp"
+            android:layout_toRightOf="@+id/userMain_exit"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="2dp"
+            android:layout_marginBottom="2dp"
+            android:background="#33ffffff" />
+
+     
+
+    </RelativeLayout>
+      
+
+      <TextView
+          android:id="@+id/textView1"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_margin="10dp"
+          android:textSize="20sp"
+          android:text="转让社团:讲你的社团转让给其他人,那么你讲不再是该社团的老大了,也没有任何创建者的权限\n解散社团:本社团的所有信息都会被删除,您也将不再拥有社团了\n这两种操作都有一定的风险请谨慎操作" />
+
+      <EditText
+          android:id="@+id/password"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:ems="10"
+          android:hint="请输入您的密码已确认您的身份"
+          android:layout_margin="10dp"
+          android:inputType="textPassword"
+           >
+
+          <requestFocus />
+      </EditText>
+
+      <Button
+          android:id="@+id/button1"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_marginLeft="10dp"
+          android:layout_marginRight="10dp"
+          android:onClick="zhuanrang"
+          android:text="转让社团" />
+      <Button
+          android:id="@+id/button1"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_marginLeft="10dp"
+          android:layout_marginRight="10dp"
+          android:onClick="jiesan"
+          android:text="解散社团" />
+
+</LinearLayout>

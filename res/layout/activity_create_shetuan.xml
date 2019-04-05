@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    
+     >
+     <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#828482" >
+
+        <TextView
+            android:id="@+id/shetuan_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/view"
+            android:text="创建社团"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="10dp"
+            android:textColor="#ffffff"
+            android:textSize="22sp" />
+        <ImageView
+            android:id="@+id/exit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:onClick="tuichu"
+            android:src="@drawable/sign_out_arrow" />
+
+        <View
+            android:id="@+id/view"
+            android:layout_width="2dp"
+            android:layout_height="20dp"
+            android:layout_toRightOf="@+id/exit"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="2dp"
+            android:layout_marginBottom="2dp"
+            android:background="#33ffffff" />
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:onClick="complete"
+            android:src="@drawable/duihao2" />
+
+    </RelativeLayout>
+
+       <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="5dp"
+         >
+        
+         <EditText
+            android:id="@+id/create_shetuan_sname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/textView1"
+            android:layout_alignBottom="@+id/create_shetuan_touxiang"
+            android:layout_weight="1"
+            android:layout_toLeftOf="@+id/create_shetuan_touxiang"
+            android:ems="10"
+            android:hint="确认后不能修改"
+            android:maxLength="15" />
+
+        <ImageView
+            android:id="@+id/create_shetuan_touxiang"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_alignParentRight="true"
+            android:layout_margin="3dp"
+            android:src="@drawable/touxiang" />
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/create_shetuan_sname"
+            android:layout_alignBottom="@+id/create_shetuan_sname"
+            android:layout_alignParentLeft="true"
+            android:text="社团名称：" />
+
+    </RelativeLayout>
+
+    <View
+	    android:id="@+id/create_shetuan_view_sname"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:background="#828482" >
+    </View>
+   
+
+ 
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="3dp"
+        android:layout_marginRight="5dp" >
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="社团公告：" />
+
+        <EditText
+            android:id="@+id/create_shetuan_snotice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10"
+            android:hint="公告会在首页展示"
+            android:lines="3"
+            android:gravity="start"
+            >
+        </EditText>
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/create_shetuan_view_snotice"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:background="#828482" >
+    </View>
+    <!-- 生日 -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="3dp"
+        android:layout_marginRight="5dp" >
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="社团描述：" />
+
+        <EditText
+            android:id="@+id/create_shetuan_sdescribe"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10"
+            android:hint="让更多人了解你的社团"  
+            android:minLines="3"
+            android:maxLines="8"
+            android:gravity="start"
+            >
+
+        </EditText>
+        
+    </LinearLayout>
+
+    <View
+        android:id="@+id/create_shetuan_view_sdescribe"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:background="#828482" >
+    </View>
+  
+
+</LinearLayout>

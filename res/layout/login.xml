@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#828482"
+         >
+    <TextView
+        android:id="@+id/shetuan_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:textSize="22sp"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="10dp"
+        android:textColor="#ffffff"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:text="登录" />
+
+  
+  
+        
+    </RelativeLayout>
+
+    <EditText
+        android:id="@+id/userName"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:ems="10"
+        android:maxLength="15"
+        android:hint="用户名"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:layout_margin="3dp"
+        android:drawableLeft="@drawable/user"
+        android:drawablePadding="3dp"
+        android:background="@drawable/login_edittext"
+         >
+        <requestFocus />
+    </EditText>
+
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:ems="10"
+        android:hint="密码"
+        android:layout_margin="3dp"
+        android:maxLength="15"
+         android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:drawableLeft="@drawable/password"
+        android:drawablePadding="3dp"
+        android:background="@drawable/login_edittext"
+        android:inputType="textPassword" />
+
+    <Button
+        android:id="@+id/login_btn"
+        style="@style/login_button_style"
+        android:onClick="login"
+        android:text="登录" />
+    <Button
+        android:id="@+id/zhuce_btn"
+      	style="@style/login_button_style"
+        android:onClick="zhuce"
+        android:text="注册" />
+
+</LinearLayout>

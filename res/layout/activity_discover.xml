@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#eeeeee"
+    >
+    
+	<View  
+	    android:layout_width="match_parent"
+    	android:layout_height="18dp"/>
+	<LinearLayout
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:background="#ffffff"
+	    android:id="@+id/discover_xiakeliao"
+	     >
+
+		<TextView
+		    android:id="@+id/textView3"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:textSize="18sp"
+		    android:layout_marginTop="8dp"
+		    android:layout_marginBottom="8dp"
+		    android:layout_marginLeft="12dp"
+		    android:gravity="center_vertical"
+		    android:drawableLeft="@drawable/xiaokeliao"
+		    android:drawablePadding="11dp"
+		    android:text="下课聊" />
+
+	</LinearLayout>
+	<View  
+	    android:layout_width="match_parent"
+    	android:layout_height="18dp"/>
+	<LinearLayout
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:background="#ffffff"
+	    android:id="@+id/discover_shetuanjiao"
+	     >
+
+		<TextView
+		    android:id="@+id/textView3"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:textSize="18sp"
+		    android:gravity="center_vertical"
+		    android:layout_marginTop="8dp"
+		    android:layout_marginBottom="8dp"
+		    android:layout_marginLeft="10dp"
+		    android:drawableLeft="@drawable/xiaoniao1"
+		    android:drawablePadding="10dp"
+		    android:text="发表社团角语录" />
+
+	</LinearLayout>
+	<View  
+	    android:layout_width="match_parent"
+    	android:layout_height="18dp"/>
+
+	
+
+
+
+</LinearLayout>

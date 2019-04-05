@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    
+     >
+     <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#828482" >
+
+        <TextView
+            android:id="@+id/shetuan_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/view"
+            android:text="创建社团"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="10dp"
+            android:textColor="#ffffff"
+            android:textSize="22sp" />
+        <ImageView
+            android:id="@+id/exit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:onClick="tuichu"
+            android:src="@drawable/sign_out_arrow" />
+
+        <View
+            android:id="@+id/view"
+            android:layout_width="2dp"
+            android:layout_height="20dp"
+            android:layout_toRightOf="@+id/exit"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="2dp"
+            android:layout_marginBottom="2dp"
+            android:background="#33ffffff" />
+
+
+    </RelativeLayout>
+
+     <FrameLayout
+         android:layout_width="match_parent"
+         android:layout_height="match_parent"
+          android:id="@+id/frameLayout1"
+          >
+
+			<RelativeLayout
+			    android:layout_width="match_parent"
+			    android:layout_height="match_parent" >
+
+			    <TextView
+			        android:id="@+id/shetuan_tv_title"
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:layout_alignParentTop="true"
+			        android:layout_centerHorizontal="true"
+			        android:layout_marginTop="24dp"
+			        android:text="创建失败"
+			        android:textColor="#ff0000"
+			        android:textSize="24sp" />
+
+			    <ImageView
+			        android:id="@+id/imageView1"
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:layout_below="@+id/shetuan_tv_title"
+			        android:layout_centerHorizontal="true"
+			        android:layout_marginTop="34dp"
+			        android:src="@drawable/cry" />
+
+			    <TextView
+			        android:id="@+id/textView1"
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:layout_centerHorizontal="true"
+			        android:layout_below="@+id/imageView1"
+			        android:layout_marginTop="34dp"
+			        android:text="对不起,您已经拥有自己的社团了"
+			        android:textColor="#ff0000"
+			        android:textSize="22sp" />
+
+			    <Button
+			        android:id="@+id/button1"
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:layout_below="@+id/textView1"
+			        android:layout_centerHorizontal="true"
+			        android:layout_marginTop="38dp"
+			        android:onClick="tuichu"
+			        android:text="返回" />
+
+			</RelativeLayout>
+
+     </FrameLayout>
+
+</LinearLayout>

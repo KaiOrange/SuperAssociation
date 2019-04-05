@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#fff"
+     >
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:textColor="#000"
+        android:textSize="18sp"
+        android:text="    基于Android平台的高校社团管理系统是一款免费、小巧、有趣、实用的社团管理软件。该软件所有的功能皆由西安石油大学软件1203班黄凯独立完成,其内容几乎涵盖了高校社团生活中的各个方面,是一款比较完善的软件系统。由于我们一直致力于高品质软件的开发,如果您在使用的过程中如果遇到任何不满意的地方可以随时于我们联系,我们定会陪你度过一个美好的大学时光。" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="3dp"
+        android:layout_marginBottom="3dp"
+         >
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#f00"
+            android:textSize="16sp"
+            android:text="QQ:634810575" />
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+         >
+
+        <TextView
+            android:id="@+id/about_close"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="30dp"
+            android:textColor="#0f0"
+            android:textSize="22sp"
+            android:text="关闭" />
+
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal" >
+    
+
+    <FrameLayout 
+          android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_marginTop="3dp"
+	        android:layout_marginLeft="20dp"
+	            android:layout_marginBottom="5dp"
+        >
+	    <ImageView
+	        android:id="@+id/refresh_hander_arraw"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_gravity="center"
+	        android:src="@drawable/common_listview_headview_red_arrow" />
+
+	    <ProgressBar
+	        android:id="@+id/refresh_hander_progressBar"
+	        android:layout_width="wrap_content"
+	        android:layout_gravity="center"
+	        android:visibility="invisible"
+	        android:indeterminateDuration="800"
+	        android:indeterminateDrawable="@drawable/progcess_image"
+	        android:layout_height="wrap_content" />
+
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:gravity="center_horizontal"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/refresh_hander_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#f00"
+            android:textSize="20sp"
+            android:paddingRight="30dp"
+            android:layout_marginTop="3dp"
+            android:text="下拉刷新" />
+
+        <TextView
+            android:id="@+id/refresh_hander_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/darker_gray"
+            android:layout_marginTop="3dp"
+            android:textSize="16sp"
+            android:paddingBottom="5dp"
+            android:text="最后刷新:" />
+        <View 
+             android:layout_width="wrap_content"
+            android:layout_height="5dp"
+            android:background="@android:color/transparent"
+            />
+    </LinearLayout>
+
+</LinearLayout>

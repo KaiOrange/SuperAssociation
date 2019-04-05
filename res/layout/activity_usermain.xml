@@ -1,0 +1,296 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#11000000" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#828482" >
+
+        <TextView
+            android:id="@+id/shetuan_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/view"
+            android:text="个人信息"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="10dp"
+            android:textColor="#ffffff"
+            android:textSize="22sp" />
+        <ImageView
+            android:id="@+id/userMain_exit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@+id/imageButton1"
+            android:src="@drawable/sign_out_arrow" />
+
+        <View
+            android:id="@+id/view"
+            android:layout_width="2dp"
+            android:layout_height="20dp"
+            android:layout_toRightOf="@+id/userMain_exit"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="2dp"
+            android:layout_marginBottom="2dp"
+            android:background="#33ffffff" />
+
+    </RelativeLayout>
+
+    <View  
+	    android:layout_width="match_parent"
+    	android:layout_height="18dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+         android:background="#ffffff"
+         >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+             android:id="@+id/userMain_layout_touxiang"
+             >
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="15dp"
+                android:textSize="18sp"
+                android:text="头像" />
+
+            <ImageView
+                android:id="@+id/userMain_touxiang"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:src="@drawable/touxiang_user" />
+
+        </RelativeLayout>
+        <View  
+		    android:layout_width="match_parent"
+		    android:layout_marginLeft="10dp"
+		    android:layout_marginRight="10dp"
+	    	android:layout_height="1dp"
+	    	android:background="#55000000"
+	    	/>
+        <RelativeLayout
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_margin="15dp"
+                android:textSize="18sp"
+                android:text="账号" />
+            <TextView
+                android:id="@+id/userMain_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_margin="15dp"
+                android:textSize="18sp"
+                android:text="账号" />
+            
+	    	</RelativeLayout>
+	    	<View  
+		    android:layout_width="match_parent"
+		    android:layout_marginLeft="10dp"
+		    android:layout_marginRight="10dp"
+	    	android:layout_height="1dp"
+	    	android:background="#55000000"
+	    	/>
+        <RelativeLayout
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:id="@+id/userMain_layout_nichen"
+	         >
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_margin="15dp"
+                android:textSize="18sp"
+                android:text="昵称" />
+            <TextView
+                android:id="@+id/userMain_nicheng"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_margin="15dp"
+                android:textSize="18sp"
+                android:text="昵称" />
+            
+	    	</RelativeLayout>
+	    	<View  
+		    android:layout_width="match_parent"
+		    android:layout_marginLeft="10dp"
+		    android:layout_marginRight="10dp"
+	    	android:layout_height="1dp"
+	    	android:background="#55000000"
+	    	/>
+       <RelativeLayout
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:id="@+id/userMain_layout_telphone"
+	         >
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_margin="15dp"
+                android:textSize="18sp"
+                android:text="电话号码" />
+            <TextView
+                android:id="@+id/userMain_telphone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_margin="15dp"
+                android:textSize="18sp"
+                android:text="电话号码" />
+            
+	    	</RelativeLayout>
+	    	
+
+    </LinearLayout>
+    
+    <View  
+	    android:layout_width="match_parent"
+    	android:layout_height="18dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+         android:background="#ffffff"
+         >
+	     
+        <RelativeLayout
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:id="@+id/userMain_layout_sex"
+	         >
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_margin="15dp"
+                android:textSize="18sp"
+                android:text="性别" />
+            <TextView
+                android:id="@+id/userMain_sex"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_margin="15dp"
+                android:textSize="18sp"
+                android:text="性别" />
+            
+	    	</RelativeLayout>
+	    	<View  
+		    android:layout_width="match_parent"
+		    android:layout_marginLeft="10dp"
+		    android:layout_marginRight="10dp"
+	    	android:layout_height="1dp"
+	    	android:background="#55000000"
+	    	/>
+        <RelativeLayout
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:id="@+id/userMain_layout_age"
+	         >
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_margin="15dp"
+                android:textSize="18sp"
+                android:text="年龄" />
+            <TextView
+                android:id="@+id/userMain_age"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_margin="15dp"
+                android:textSize="18sp"
+                android:text="年龄" />
+            
+	    	</RelativeLayout>
+	    	<View  
+		    android:layout_width="match_parent"
+		    android:layout_marginLeft="10dp"
+		    android:layout_marginRight="10dp"
+	    	android:layout_height="1dp"
+	    	android:background="#55000000"
+	    	/>
+        <RelativeLayout
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:id="@+id/userMain_layout_birthday"
+	         >
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_margin="15dp"
+                android:textSize="18sp"
+                android:text="生日" />
+            <TextView
+                android:id="@+id/userMain_birthday"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_margin="15dp"
+                android:textSize="18sp"
+                android:text="生日" />
+            
+	    	</RelativeLayout>
+	    	
+	</LinearLayout>
+
+    
+
+</LinearLayout>

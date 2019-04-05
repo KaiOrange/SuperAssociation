@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+     >
+     <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#828482" >
+
+        <TextView
+            android:id="@+id/shetuan_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/view"
+            android:text="添加好友通知"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="10dp"
+            android:textColor="#ffffff"
+            android:textSize="22sp" />
+        <ImageView
+            android:id="@+id/exit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:onClick="tuichu"
+            android:src="@drawable/sign_out_arrow" />
+
+        <View
+            android:id="@+id/view"
+            android:layout_width="2dp"
+            android:layout_height="20dp"
+            android:layout_toRightOf="@+id/exit"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="2dp"
+            android:layout_marginBottom="2dp"
+            android:background="#33ffffff" />
+    </RelativeLayout>
+
+     <LinearLayout
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:orientation="vertical"
+          >
+
+         <LinearLayout
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:layout_margin="10dp" >
+
+             <TextView
+                 android:id="@+id/textView1"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:layout_marginRight="10dp"
+                 android:textSize="20sp"
+                 android:textColor="#000000"
+                 android:text="标题：" />
+
+             <TextView
+                 android:id="@+id/tongzhi_title"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:textSize="18sp"
+                 android:textColor="#000000"
+                 android:layout_marginRight="10dp"
+                  />
+         </LinearLayout>
+
+         <LinearLayout
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:layout_margin="10dp" >
+
+             <TextView
+                 android:id="@+id/textView1"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:layout_marginRight="10dp"
+                 android:textSize="20sp"
+                 android:textColor="#000000"
+                 android:text="日期：" />
+
+             <TextView
+                 android:id="@+id/tongzhi_date"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:textSize="18sp"
+                 android:textColor="#000000"
+                 android:layout_marginRight="10dp"
+                 />
+         </LinearLayout>
+         <LinearLayout
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:layout_margin="10dp" >
+
+             <TextView
+                 android:id="@+id/textView1"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:layout_marginRight="10dp"
+                 android:textSize="20sp"
+                 android:textColor="#000000"
+                 android:text="内容：" />
+
+             <TextView
+                 android:id="@+id/tongzhi_text"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:textSize="18sp"
+                 android:textColor="#000000"
+                 android:layout_marginRight="10dp"
+                  />
+         </LinearLayout>
+         <LinearLayout
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:layout_margin="10dp" >
+
+             <TextView
+                 android:id="@+id/textView1"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:layout_marginRight="10dp"
+                 android:textSize="20sp"
+                 android:textColor="#000000"
+                 android:text="状态：" />
+
+             <TextView
+                 android:id="@+id/tongzhi_status"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:textSize="18sp"
+                 android:textColor="#000000"
+                 android:layout_marginRight="10dp"
+                  />
+         </LinearLayout>
+
+     </LinearLayout>
+
+     <LinearLayout
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:orientation="horizontal"
+          android:id="@+id/tongzhi_button"
+          android:visibility="gone"
+          >
+
+         <Button
+             android:id="@+id/button1"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_margin="5dp"
+             android:layout_weight="1"
+             android:background="@drawable/btn_radius"
+             android:onClick="refuseAddFriend"
+             android:paddingTop="5dp"
+             android:drawablePadding="3dp"
+        	 android:paddingBottom="5dp"
+             android:text="拒绝" />
+
+         <Button
+             android:id="@+id/button2"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_margin="5dp"
+             android:layout_weight="1"
+             android:drawablePadding="3dp"
+             android:background="@drawable/btn_radius"
+             android:onClick="confimAddFriend"
+             android:paddingTop="5dp"
+        	 android:paddingBottom="5dp"
+             android:text="同意" />
+
+     </LinearLayout>
+
+</LinearLayout>

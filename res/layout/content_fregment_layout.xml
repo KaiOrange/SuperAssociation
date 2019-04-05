@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    android:orientation="vertical" >
+
+
+    <com.xsy.superassociation.view.NoScrollingViewPager
+        android:id="@+id/content_viewpage"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+<RadioGroup
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:background="#828482"
+    android:id="@+id/tag_radiogroup"
+     >
+
+    <RadioButton
+        android:id="@+id/radio0"
+      	style="@style/tag_text_style"
+        android:drawableTop="@drawable/tag_img_1_selector"
+        android:text="社团" />
+    <RadioButton
+        android:id="@+id/radio1"
+      	style="@style/tag_text_style"
+        android:drawableTop="@drawable/tag_img_2_selector"
+        android:text="好友" />
+    <RadioButton
+        android:id="@+id/radio2"
+      	style="@style/tag_text_style"
+        android:drawableTop="@drawable/tag_img_3_selector"
+        android:text="发现" />
+    <RadioButton
+        android:id="@+id/radio3"
+      	style="@style/tag_text_style"
+        android:drawableTop="@drawable/tag_img_4_selector"
+        android:text="设置" />
+    
+
+</RadioGroup>
+
+</LinearLayout>
