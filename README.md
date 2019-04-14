@@ -25,19 +25,14 @@
 
 ![社团功能群发消息](./preview/qunfaxiaoxi.gif)
 
-3. 社团功能群发消息
-
-![社团功能群发消息](./preview/qunfaxiaoxi.gif)
-
-
-4. 社团管理
+3. 社团管理
 
 ![社团管理](./preview/shetuanguanli.gif)
 
-5. 下课聊
+4. 下课聊
 
 ![下课聊](./preview/xiakeliao.gif)
 
-6. 社团角
+5. 社团角
 
 ![社团角](./preview/shetuanjiao.gif)
